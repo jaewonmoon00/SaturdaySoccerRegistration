@@ -1,0 +1,24 @@
+{
+  "names": [
+    "Jaewon Moon",
+    "Sangwoo",
+    "Geon",
+    "Seop"
+  ],
+  "chat_id": 437189095976595,
+  "sender_keyword": "택",
+  "trigger_url_keyword": "saturday-soccer-queue.vercel.app",
+  "registration_api": "https://saturday-soccer-queue.vercel.app/api/join",
+  "queue_api": "https://saturday-soccer-queue.vercel.app/api/queue",
+  "weather": {
+    "latitude": 45.5017,
+    "longitude": -73.5673,
+    "timezone": "America/Toronto",
+    "max_precipitation_probability": 30,
+    "game_hour": 9
+  },
+  "watcher": {
+    "timeout_hours": 4,
+    "poll_interval_seconds": 15
+  }
+}

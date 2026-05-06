@@ -1,0 +1,24 @@
+name: Soccer Auto-Registration
+
+on:
+  schedule:
+    - cron: '0 15 * * 3'  # 매주 수요일 15:00 UTC = 11:00am EDT (여름)/10:00am EST (겨울)
+  workflow_dispatch:        # GitHub UI에서 수동 실행 가능
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 270    # timeout_hours(4h) + 여유 30분
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 큐 감시 및 자동 신청
+        run: python watcher.py
