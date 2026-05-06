@@ -2,8 +2,7 @@
   "names": [
     "Jaewon Moon",
     "Sangwoo",
-    "Geon",
-    "Seop"
+    "Geon"
   ],
   "registration_api": "https://saturday-soccer-queue.vercel.app/api/join",
   "queue_api": "https://saturday-soccer-queue.vercel.app/api/queue",
