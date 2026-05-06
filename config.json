@@ -5,9 +5,6 @@
     "Geon",
     "Seop"
   ],
-  "chat_id": 437189095976595,
-  "sender_keyword": "택",
-  "trigger_url_keyword": "saturday-soccer-queue.vercel.app",
   "registration_api": "https://saturday-soccer-queue.vercel.app/api/join",
   "queue_api": "https://saturday-soccer-queue.vercel.app/api/queue",
   "weather": {
