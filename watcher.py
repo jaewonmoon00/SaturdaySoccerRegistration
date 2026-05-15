@@ -78,7 +78,7 @@ def watch_site(config: dict, dry_run: bool = False):
 
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 큐: {current}명")
 
-        if current > baseline:
+        if (baseline > 0 and current == 0) or (baseline == 0 and current > 0):
             print(f"\n✅ 변화 감지! {baseline}명 → {current}명 — 파이프라인 실행...")
             result_msg = run_pipeline(config, dry_run=dry_run)
             if not dry_run:
